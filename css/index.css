@@ -1,0 +1,409 @@
+body {
+
+    background-image: url("../images/bg2.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -8rem;
+    overflow-x: hidden;
+
+}
+
+.nav {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    border-width: 3px;
+    border-style: solid;
+    position: fixed;
+    width: 95vw;
+    background-color: rgba(240, 255, 255, 0.706);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.logo {
+    max-width: 5rem;
+    height: auto;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(87, 47, 47);
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.nav-link.active {
+    color: rgb(155, 94, 94);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section.aboutme {
+    margin-top: 3rem;
+
+}
+
+.hero {
+
+    display: flex;
+    gap: 30%;
+
+}
+
+a {
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+}
+
+a:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+.text {
+    background-color: rgba(245, 245, 220, 0.838);
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+}
+
+.hero-img {
+    width: 25rem;
+    border-radius: 3rem;
+    height: auto;
+}
+
+.name {
+    color: rgb(107, 112, 5);
+    font-family: sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.aboutme {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+
+    gap: 1px;
+    color: rgb(34, 34, 34);
+}
+
+
+ul#projects {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.728);
+    border-radius: 3rem;
+    list-style: none;
+}
+
+ul#projects li {
+    height: 40vh;
+    flex-grow: 1;
+    margin: 0.5rem;
+}
+
+ul#projects li:last-child {
+
+    flex-grow: 10;
+}
+
+ul#projects li img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+    ul#projects li {
+        height: 30vh;
+        margin: 0.5rem;
+    }
+}
+
+
+@media (max-height: 480px) {
+    ul#projects li {
+        height: 80vh;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul#projects {
+        flex-direction: row;
+    }
+
+    ul#projects li {
+        height: auto;
+        width: 100%;
+    }
+
+    ul#projects li img {
+        width: 100%;
+        max-height: 75vh;
+        min-width: 0;
+        margin: 0.5rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+}
+
+.icon {
+    display: none;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+section.recent {
+    max-height: fit-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    gap: 29%;
+    min-height: 100vh;
+}
+
+.skill #img {
+    max-width: 30vw;
+    height: 50%;
+    align-self: center;
+    border-radius: 3rem;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+
+.me {
+    max-width: 25vw;
+    border-radius: 2rem;
+
+}
+
+.address {
+    width: 40vw;
+    height: 70vh;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgba(7, 110, 110, 0.828);
+    border-radius: 2rem;
+}
+
+.social {
+    list-style: none;
+    margin-top: 20%;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.social-link {
+    color: rgb(0, 225, 225);
+
+}
+
+.location {
+    width: 100vw;
+    height: 30vh;
+    box-sizing: border-box;
+    display: block;
+}
+
+.btn {
+    outline: none;
+    border: 2px white solid;
+    padding: 1rem;
+    background-color: rgb(255, 251, 127);
+    color: rgb(15, 4, 1);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 1rem;
+}
+
+.dropdown {
+    position: fixed;
+    top: 4rem;
+    right: 2rem;
+    background-color: rgba(2, 5, 8, 0.728);
+    color: aliceblue;
+    border-radius: 2rem;
+    display: none;
+
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown {
+    padding: 1rem;
+
+}
+.projects {
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;
+    background-color: aqua;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.dropdown ul li {
+    padding: 0.5rem;
+
+}
+
+.dropdown ul li a {
+    color: aliceblue;
+    transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdown ul li a:hover {
+    color: rgb(19, 238, 219);
+}
+
+@media (max-width: 881px) {
+    body {
+        background-color: rgb(52 52 52);
+        overflow-x: hidden;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav .logo {
+        max-width: 3rem;
+    }
+
+    .nav .logo-text {
+        font-size: 1rem;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .dropdown.open {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    section {
+        max-width: 100vw;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .hero {
+
+        flex-direction: column;
+        gap: 10%;
+        align-items: center;
+
+    }
+
+    .hero-img {
+        max-width: 40vw;
+
+    }
+
+    .projects {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+        background-color: aqua;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .name {
+        color: rgb(107, 112, 5);
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .aboutme {
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-weight: 300;
+
+        gap: 1px;
+        color: rgb(34, 34, 34);
+    }
+
+    .skill {
+        flex-direction: column;
+
+       
+        justify-content: center;
+        gap: 10%;
+        max-width: 100vw;
+
+    }
+    .skill #img {
+        max-width: 70vw;
+        border-radius: 3rem;
+    }
+    .address {
+        width:90vw;
+        height: 50vh;
+        box-sizing: border-box;
+        display: block;
+        background-color: rgba(7, 110, 110, 0.828);
+        border-radius: 2rem;
+    }
+    
+}
+
+.fiverr {
+    max-width: 2rem;
+}
